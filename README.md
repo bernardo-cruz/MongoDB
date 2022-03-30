@@ -1,2 +1,2 @@
-# MongoDB_hsl
+# MongoDB
 MongoDB personal project
