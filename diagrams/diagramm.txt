@@ -1,0 +1,75 @@
+@startjson
+{
+  "Address": {
+    "City": "Text",
+    "Country": "Text",
+    "HouseNum": "Text",
+    "PostalCode": "Text",
+    "Street": "Text",
+    "Floor": "Text",
+    "Region": "Text",
+    "Timezone": "Text",
+    "ParkingSpot": "Text",
+    "ParkingFacility": "Text"
+  },
+  "IsOpen24Hours": "Boolean",
+  "ChargingStationId": "Text",
+  "GeoCoordinates": {
+    "Google": "Double"
+  },
+  "lastUpdate": "Text",
+  "HotlinePhoneNum": "",
+  "ClearinghouseID": "Text",
+  "OpeningTimes": [],
+  "GeoChargingPointEntrance": {
+    "Google": "Double"
+  },
+  "HubOperatorID": "Text",
+  "ChargingStationNames": "Text",
+  "AccessibilityLocation": "Text",
+  "CalibrationLawDataAvailability": "Text",
+  "ChargingStationLocationReference": "Text",
+  "EnergySource": "Text",
+  "EnvironmentalImpact": "Text",
+  "LocationImage": "Text",
+  "RenewableEnergy": "Text",
+  "SuboperatorName": "Text",
+  "Plugs": [
+    "Text",
+    "Text",
+    "Text"
+  ],
+  "Accessibility": "Text",
+  "EvseID": "Text",
+  "DynamicInfoAvailable": "Text",
+  "ChargingFacilities": [
+    {
+      "power": "int"
+    },
+    {
+      "power": "int"
+    },
+    {
+      "power": "int"
+    }
+  ],
+  "IsHubjectCompatible": "text",
+  "MaxCapacity": "text",
+  "PaymentOptions": [
+    "text"
+  ],
+  "AdditionalInfo": [
+    "text"
+  ],
+  "ChargingPoolID": "int",
+  "deltaType": "text",
+  "ValueAddedServices": [
+    "text"
+  ],
+  "AuthenticationModes": [
+    "text"
+  ],
+  "DynamicPowerLevel": "text",
+  "HardwareManufacturer": "text"
+}
+@endjson

@@ -1,0 +1,79 @@
+@startuml
+title Charging Station Data
+
+entity Charging_Stations {
+  EVSEDataRecord: Array
+  OperatorID: String
+  OperatorName: String
+}
+
+entity OperatorID {
+  Name: text
+}
+
+entity OperatorName {
+  Name: text
+}
+
+entity EVSEDataRecord {
+  Address: Array
+}
+
+entity Address_Information {
+  Address: {}
+  IsOpen24Hours: Boolean
+  ChargingStationId: String 
+  GeoCoordinates: {Lat: Double, Long: Double}
+  lastUpdate: String
+  HotlinePhoneNum: Int
+  ClearinghouseID: String
+  OpeningTimes: []
+  GeoChargingPointEntrance: {Lat: Double, Long: Double}
+  HubOperatorID: String
+  ChargingStationNames: String
+  AccessibilityLocation: String
+  CalibrationLawDataAvailability: String
+  ChargingStationLocationReference: String
+  EnergySource: String
+  EnvironmentalImpact: String 
+  LocationImage: String
+  RenewableEnergy: String
+  SuboperatorName: String
+  Plugs: Array of types available
+  Accessibility: String
+  EvseID: String
+  DynamicInfoAvailable: String
+  ChargingFacilities: Array of types available
+  IsHubjectCompatible: String
+  MaxCapacity: String
+  PaymentOptions: Array of options
+  AdditionalInfo: Array of options
+  ChargingPoolID: Int
+  deltaType: String
+  ValueAddedServices: Array of options
+  AuthenticationModes: Array of options
+  DynamicPowerLevel: String
+  HardwareManufacturer: String
+}
+
+entity Address {
+  City: String
+  Country: String
+  HouseNum: String
+  PostalCode: String
+  Street: String
+  Floor: String
+  Region: String
+  Timezone: String
+  ParkingSpot: String
+  ParkingFacility: String
+}
+
+Charging_Stations  --o{  OperatorID 
+Charging_Stations  }o--o|  OperatorName
+Charging_Stations  }o--o|  EVSEDataRecord
+EVSEDataRecord --o{  Address_Information
+Address_Information }o--o|  Address
+
+
+@enduml
